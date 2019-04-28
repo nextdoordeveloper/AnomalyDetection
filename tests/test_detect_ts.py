@@ -3,7 +3,7 @@ sys.path.append("..")
 sys.path.append("../anomaly_detection/")
 
 from anomaly_detection.anomaly_detect_ts import _detect_anoms, anomaly_detect_ts,\
-    get_data_tuple, _get_max_outliers, _get_decomposed_data_tuple,\
+    _get_data_tuple, _get_max_outliers, _get_decomposed_data_tuple,\
     _perform_threshold_filter, _get_plot_breaks, _get_only_last_results
 
 import pandas as pd
