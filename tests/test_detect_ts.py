@@ -235,7 +235,7 @@ class TestAnomalyDetection(unittest.TestCase):
                                       only_last=None, longterm=False, plot=False)
             
     def test_get_data_tuple(self):
-        d_tuple = get_data_tuple(self.data1, 24, None)
+        d_tuple = _get_data_tuple(self.data1, 24, None)
         raw_data = d_tuple[0]
         period = d_tuple[1]
         granularity = d_tuple[2]
@@ -280,3 +280,5 @@ class TestAnomalyDetection(unittest.TestCase):
         self.assertEquals(23, len(last_day))
         self.assertEquals(3, len(last_hr))
 
+if __name__ == "__main__":
+    unittest.main()
